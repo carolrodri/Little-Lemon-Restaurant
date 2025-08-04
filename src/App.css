@@ -30,7 +30,7 @@
   gap: 2rem;
 }
 
-main {
+.hero-section {
   background-color: #495E57;
   padding: 2rem 1rem;
 }
@@ -69,6 +69,15 @@ main h2 {
   gap: 1rem;
 }
 
+.text-content p {
+  color: #EDEFEE;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
 .image-content {
   flex-shrink: 0;
   flex-basis: 40%;
@@ -82,16 +91,17 @@ main h2 {
   transform: translateY(4rem);
 }
 
-main p {
-  font-family: 'Karla', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: white;
-  margin: 0;
+.menu-button {
+  background-color: #F4CE14;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
-button {
+.text-content button {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -102,4 +112,63 @@ button {
   padding: 0.8rem 2.5rem;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.dish-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specials-section {
+  background-color: white;
+  padding: 4rem 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.dish-card {
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+.dish-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.dish-card h3 {
+  font-size: 1.5rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.dish-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #EE9972;
+  padding: 0.5rem 1rem;
+}
+
+.dish-description {
+  padding: 0 1rem 1rem 1rem;
+  flex-grow: 1;
+}
+
+.dish-delivery {
+  font-weight: bold;
+  padding: 0 1rem 1.5rem 1rem;
 }
