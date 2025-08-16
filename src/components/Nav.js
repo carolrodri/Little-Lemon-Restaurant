@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import cartIcon from './assets/Basket.svg'
+import cartIcon from '../assets/Basket.svg'
 
 
 function Nav() {
